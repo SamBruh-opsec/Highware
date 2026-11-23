@@ -1,0 +1,19 @@
+HighASM:
+
+Prog_start {start}
+{start}:
+    sys-end
+
+NASM:
+
+global _start
+_start:
+    mov al, 60h
+    syscall
+
+What we did:
+
+Prog_start {start} ---------- global _start (Program's Start -> func. 'start')
+{start}: ------------------- _start: (Calling the Program's kickstart function)
+sys-end ----------------------- mov al, 60h 
+                                                 syscall (Abstracting syscalls to just a single word)
