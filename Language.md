@@ -6,6 +6,6 @@
 - Has most of the similarities of Assembly
 
 ## Specs
-- Made in Python
+- Made in C
 - Assembler: NASM
 - Final Output: Linux ELF64
